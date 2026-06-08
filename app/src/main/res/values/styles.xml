@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CircleImageView">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Shape_MaterialCard_Square" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">0dp</item>
+    </style>
+
+    <style name="TextShadowStyle">
+        <item name="android:shadowColor">#FF000000</item>
+        <item name="android:shadowDx">4</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:shadowRadius">6</item>
+    </style>
+
+</resources>

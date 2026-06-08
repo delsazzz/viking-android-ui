@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity7">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_total"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/boton_madera"
+        app:strokeWidth="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/guide_line_perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_madera">
+
+            <ImageView
+                android:id="@+id/atras3"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/outline_arrow_left_alt_24" />
+
+            <TextView
+                android:id="@+id/viking_sword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="80dp"
+                android:fontFamily="@font/cormorant_garamond"
+                android:text="@string/my_account"
+                android:textColor="@color/amarillo_vikingo"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextShadowStyle"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:strokeWidth="3dp"
+        app:cornerRadius="0dp"
+        app:cardElevation="4dp"
+        app:shapeAppearanceOverlay="@style/Shape_MaterialCard_Square"
+        app:strokeColor="@color/amarillo_vikingo"
+        app:layout_constraintBottom_toTopOf="@+id/guide_line_perfil_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guide_line_perfil">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:src="@drawable/vikingo_perfil"
+                android:layout_gravity="start"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/jarl_erik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/cormorant_garamond"
+                    android:text="@string/jarl_erik"
+                    android:textColor="@color/amarillo_vikingo"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextShadowStyle"/>
+
+                <TextView
+                    android:id="@+id/email_erik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/cormorant_garamond"
+                    android:text="@string/erik_example_com"
+                    android:textColor="@color/amarillo_vikingo"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextShadowStyle"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/moneda"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/moneda_950"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/cinzel_bold"
+                        android:textStyle="bold"
+                        android:text="@string/_950"
+                        android:textColor="@color/dorado_moneda"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:textAppearance="@style/TextShadowStyle"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:strokeWidth="0dp"
+        app:cornerRadius="0dp"
+        app:cardElevation="4dp"
+        app:shapeAppearanceOverlay="@style/Shape_MaterialCard_Square"
+        app:layout_constraintBottom_toTopOf="@+id/guide_line_boton_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guide_line_perfil_account">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear_editar_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginEnd="9dp"
+                android:background="@drawable/fondo_contrasena"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icono_casco"
+                    android:layout_marginStart="15dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/cormorant_garamond"
+                    android:text="@string/edit_profile"
+                    android:textColor="@color/amarillo_vikingo"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="12dp"
+                    android:textAppearance="@style/TextShadowStyle"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/baseline_keyboard_arrow_right_24"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginEnd="9dp"
+                android:background="@drawable/fondo_contrasena"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icono_pedido"
+                    android:layout_marginStart="15dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/cormorant_garamond"
+                    android:text="@string/my_orders"
+                    android:textColor="@color/amarillo_vikingo"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="12dp"
+                    android:textAppearance="@style/TextShadowStyle"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/baseline_keyboard_arrow_right_24"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginEnd="9dp"
+                android:background="@drawable/fondo_contrasena"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icono_corazon"
+                    android:layout_marginStart="15dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/cormorant_garamond"
+                    android:text="My Wishlist"
+                    android:textColor="@color/amarillo_vikingo"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="12dp"
+                    android:textAppearance="@style/TextShadowStyle"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/baseline_keyboard_arrow_right_24"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginEnd="9dp"
+                android:background="@drawable/fondo_contrasena"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icono_tarjeta_pago"
+                    android:layout_marginStart="15dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/cormorant_garamond"
+                    android:text="@string/payment_methods"
+                    android:textColor="@color/amarillo_vikingo"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="12dp"
+                    android:textAppearance="@style/TextShadowStyle"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/baseline_keyboard_arrow_right_24"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginEnd="9dp"
+                android:background="@drawable/fondo_contrasena"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icono_ubicacion"
+                    android:layout_marginStart="15dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/cormorant_garamond"
+                    android:text="@string/shipping_adress"
+                    android:textColor="@color/amarillo_vikingo"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="12dp"
+                    android:textAppearance="@style/TextShadowStyle"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/baseline_keyboard_arrow_right_24"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginEnd="9dp"
+                android:background="@drawable/fondo_contrasena"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icono_campanita"
+                    android:layout_marginStart="15dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/cormorant_garamond"
+                    android:text="@string/notifications"
+                    android:textColor="@color/amarillo_vikingo"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="12dp"
+                    android:textAppearance="@style/TextShadowStyle"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/baseline_keyboard_arrow_right_24"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continue_shopping"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@drawable/boton_1200"
+        android:fontFamily="@font/cormorant_garamond"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:text="@string/log_out"
+        android:textColor="@color/amarillo_vikingo"
+        android:textSize="25sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/guide_line_final2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guide_line_boton_logout"
+        app:layout_constraintVertical_bias="0.639"
+        android:textAppearance="@style/TextShadowStyle"/>
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/icono_home"
+        app:layout_constraintTop_toTopOf="@id/guide_line_final2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cartera"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintHorizontal_chainStyle="spread_inside" />
+
+    <ImageButton
+        android:id="@+id/cartera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/inicio"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/home"
+        app:layout_constraintTop_toTopOf="@id/guide_line_final2"
+        app:layout_constraintVertical_bias="0.521"
+        app:srcCompat="@drawable/icono_cartera" />
+
+    <ImageButton
+        android:id="@+id/inicio"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="10dp"
+        app:srcCompat="@drawable/icono_inicio"
+        app:layout_constraintTop_toTopOf="@id/guide_line_final2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cartera"
+        app:layout_constraintEnd_toStartOf="@+id/campana1"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <ImageButton
+        android:id="@+id/campana1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="30dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/icono_campana"
+        app:layout_constraintTop_toTopOf="@id/guide_line_final2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/inicio"
+        app:layout_constraintEnd_toStartOf="@id/casco_guerrero"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <ImageButton
+        android:id="@+id/casco_guerrero"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="15dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/icono_casco_guerrero"
+        app:layout_constraintTop_toTopOf="@id/guide_line_final2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/campana1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_final2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.879617" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_perfil_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.29138166" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_boton_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72" />
+
+    <ImageView
+        android:id="@+id/boton6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/micro"
+        app:layout_constraintBottom_toTopOf="@+id/guide_line_perfil_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

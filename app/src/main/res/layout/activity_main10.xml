@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity10">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_total"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/boton_madera"
+        app:strokeWidth="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/guide_line_perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_madera">
+
+            <ImageView
+                android:id="@+id/atras6"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/outline_arrow_left_alt_24" />
+
+            <TextView
+                android:id="@+id/viking_sword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="60dp"
+                android:fontFamily="@font/cormorant_garamond"
+                android:text="@string/live_transmissions"
+                android:textColor="@color/amarillo_vikingo"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextShadowStyle"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardview_combate"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:strokeWidth="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/margen_derecho"
+        app:layout_constraintStart_toStartOf="@+id/margen_izquierdo"
+        app:layout_constraintTop_toTopOf="@+id/guide_line_perfil">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/pelea_vikingos"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pelea_vikingos"
+                app:layout_constraintBottom_toTopOf="@id/layoutInfo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/layoutInfo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/live1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true"
+                android:src="@drawable/live"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/layoutLikes1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_marginTop="84dp"
+                android:background="@drawable/bg_overlay"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                app:layout_constraintBottom_toBottomOf="@+id/pelea_vikingos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/live1"
+                app:layout_constraintVertical_bias="0.909">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/corazon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/_163"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gradient_bottom"
+                android:orientation="vertical"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/viking_combat_tournament"
+                    android:fontFamily="@font/cormorant_garamond"
+                    android:textSize="20sp"
+                    android:textColor="@color/amarillo_vikingo"
+                    android:textAppearance="@style/TextShadowStyle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_1_2k_watching"
+                    android:textColor="@color/amarillo_vikingo"
+                    android:fontFamily="@font/cormorant_garamond"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/TextShadowStyle"/>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView3"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="50dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/guide_line_final2"
+        app:layout_constraintEnd_toStartOf="@+id/margen_derecho"
+        app:layout_constraintStart_toStartOf="@+id/margen_izquierdo"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:strokeWidth="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/barco_vikingo"
+                app:layout_constraintBottom_toTopOf="@id/layoutInfo2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/layoutInfo2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/live2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/live"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/layoutLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/bg_overlay"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/live2"
+                app:layout_constraintVertical_bias="1.0">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/corazon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/_255"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutInfo2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/bg_gradient_bottom"
+                android:orientation="vertical"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cormorant_garamond"
+                    android:text="@string/viking_expedition_at_sea"
+                    android:textColor="@color/amarillo_vikingo"
+                    android:textSize="20sp"
+                    android:textAppearance="@style/TextShadowStyle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cormorant_garamond"
+                    android:text="@string/_735_watching"
+                    android:textColor="@color/amarillo_vikingo"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/TextShadowStyle"/>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <ImageView
+        android:id="@+id/boton9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/micro"
+        app:layout_constraintBottom_toTopOf="@+id/guide_line_final2"
+        app:layout_constraintEnd_toStartOf="@+id/margen_derecho"
+        app:layout_constraintStart_toStartOf="@+id/margen_izquierdo"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView3" />
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/icono_home"
+        app:layout_constraintTop_toTopOf="@id/guide_line_final2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cartera"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintHorizontal_chainStyle="spread_inside" />
+
+    <ImageButton
+        android:id="@+id/cartera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/inicio"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/home"
+        app:layout_constraintTop_toTopOf="@id/guide_line_final2"
+        app:layout_constraintVertical_bias="0.521"
+        app:srcCompat="@drawable/icono_cartera" />
+
+    <ImageButton
+        android:id="@+id/inicio"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="10dp"
+        app:srcCompat="@drawable/icono_inicio"
+        app:layout_constraintTop_toTopOf="@id/guide_line_final2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cartera"
+        app:layout_constraintEnd_toStartOf="@+id/campana1"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <ImageButton
+        android:id="@+id/campana1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="30dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/icono_campana"
+        app:layout_constraintTop_toTopOf="@id/guide_line_final2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/inicio"
+        app:layout_constraintEnd_toStartOf="@id/casco_guerrero"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <ImageButton
+        android:id="@+id/casco_guerrero"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="15dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/vikingo_perfil"
+        app:layout_constraintTop_toTopOf="@id/guide_line_final2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/campana1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_final2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.879617" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margen_izquierdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margen_derecho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

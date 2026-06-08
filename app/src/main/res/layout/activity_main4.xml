@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_marron"
+    tools:context=".MainActivity4">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/boton_madera"
+        app:strokeWidth="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/guide_line_perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_madera">
+
+            <ImageView
+                android:id="@+id/atras1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_marginStart="30dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/outline_arrow_left_alt_24"/>
+
+            <TextView
+                android:id="@+id/viking_sword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:textSize="25sp"
+                android:text="@string/viking_sword"
+                android:layout_gravity="center"
+                android:textColor="@color/amarillo_vikingo"
+                android:textStyle="bold"
+                android:fontFamily="@font/cormorant_garamond"
+                android:textAppearance="@style/TextShadowStyle"/>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/moneda" />
+
+            <TextView
+                android:id="@+id/moneda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center"
+                android:text="@string/__1"
+                android:textSize="20sp"
+                android:textColor="@color/amarillo_vikingo"
+                android:textStyle="bold"
+                android:fontFamily="@font/cinzel_bold"
+                android:textAppearance="@style/TextShadowStyle"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/carrito"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_oferta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <ImageView
+        android:id="@+id/espadas_tienda"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/guide_line_oferta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guide_line_perfil"
+        app:srcCompat="@drawable/espadas_tienda" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:strokeWidth="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guide_line_final2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guide_line_oferta"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/viking_sword2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:fontFamily="@font/cormorant_garamond"
+                    android:text="@string/viking_sword"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="65dp"
+                    android:textColor="@color/amarillo_vikingo"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextShadowStyle"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/moneda" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/linea_amarilla"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/width_3_5cm"
+                    android:layout_gravity="start"
+                    android:textColor="@color/amarillo_vikingo"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/cormorant_garamond"
+                    android:textAppearance="@style/TextShadowStyle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="@string/varics"
+                    android:layout_gravity="center"
+                    android:textColor="@color/amarillo_vikingo"
+                    android:layout_marginStart="170dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/cormorant_garamond"
+                    android:textAppearance="@style/TextShadowStyle"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/length_95cm"
+                android:layout_gravity="start"
+                android:textColor="@color/amarillo_vikingo"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/cormorant_garamond"
+                android:textAppearance="@style/TextShadowStyle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/weigth_1_2kg"
+                android:layout_gravity="start"
+                android:textColor="@color/amarillo_vikingo"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/cormorant_garamond"
+                android:textAppearance="@style/TextShadowStyle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/a_finely_crafted_norse_ongsword_with_a_sharp_nsteel_blade_an_intricately_engraved_hilt_and_a_nleather_wrapped_grip_perfect_for_any_modern_nday_viking_warrior"
+                android:layout_gravity="start"
+                android:textColor="@color/amarillo_vikingo"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/cormorant_garamond"
+                android:textAppearance="@style/TextShadowStyle"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/boton_quantity"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/boton_quantity"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="30dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_1201"
+                    android:layout_width="227dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/boton_1200"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/_1_200_g"
+                    android:textColor="@color/amarillo_vikingo"
+                    android:layout_marginStart="-20dp"
+                    android:layout_marginEnd="-20dp"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    app:icon="@drawable/moneda"
+                    app:iconGravity="textStart"
+                    app:iconPadding="10dp"
+                    app:iconTint="@null"
+                    app:backgroundTint="@null"
+                    android:paddingBottom="20dp"
+                    android:fontFamily="@font/cinzel_bold"
+                    android:textAppearance="@style/TextShadowStyle"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_final2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.879617" />
+
+    <ImageView
+        android:id="@+id/checkout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guide_line_final2"
+        app:srcCompat="@drawable/checkout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
